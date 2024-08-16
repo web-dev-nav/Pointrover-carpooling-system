@@ -3,8 +3,8 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Dec 27, 2023 at 01:23 AM
--- Server version: 10.6.14-MariaDB-cll-lve
+-- Generation Time: Aug 16, 2024 at 04:43 AM
+-- Server version: 10.11.8-MariaDB-cll-lve
 -- PHP Version: 7.2.34
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
@@ -74,7 +74,34 @@ INSERT INTO `address_maping` (`mid`, `driver_trips_id`, `departure_city`, `depar
 (163, 189, 'Vancouver', 'V5Y 1M8', 'BC', 'Oakville', 'L6L 0B6', 'ON', '4,323 km', '1 day 15 hours'),
 (161, 187, 'Mississauga', 'L4T 0A5', 'ON', 'Toronto', 'M5B 0C3', 'ON', '32.5 km', '38 mins'),
 (162, 188, 'Toronto', 'M5V 0E9', 'ON', 'Brampton', 'L7A 2L6', 'ON', '50.6 km', '46 mins'),
-(160, 186, 'Toronto', 'M9W 3W8', 'ON', 'Mississauga', 'L4T 0A5', 'ON', '12.2 km', '15 mins');
+(160, 186, 'Toronto', 'M9W 3W8', 'ON', 'Mississauga', 'L4T 0A5', 'ON', '12.2 km', '15 mins'),
+(190, 216, 'Brantford', 'N3T 5L5', 'ON', 'Brantford', 'N3T 6G6', 'ON', '5.6 km', '10 mins'),
+(191, 217, 'Toronto', 'M6R 2Z3', 'ON', 'Brantford', 'N3T 6G6', 'ON', '97.5 km', '1 hour 10 mins'),
+(192, 218, 'Hamilton', 'L8M 2W1', 'ON', 'Brantford', '', 'ON', '42.0 km', '40 mins'),
+(193, 219, 'Toronto', 'M1B 5N1', 'ON', 'Toronto', 'M5G 1S4', 'ON', '27.0 km', '30 mins'),
+(194, 220, 'Toronto', 'M5V 1M5', 'ON', 'Brantford', 'N3T 5L5', 'ON', '108 km', '1 hour 17 mins'),
+(195, 221, 'Brantford', 'N3T 5L5', 'ON', 'Brantford', 'N3T 2H5', 'ON', '5.5 km', '9 mins'),
+(196, 222, 'Brantford', 'N3T 5L5', 'ON', 'Brantford', 'N3T 2H5', 'ON', '5.5 km', '9 mins'),
+(197, 223, 'Brantford', 'N3T 5L5', 'ON', 'Brantford', 'N3T 2H5', 'ON', '5.5 km', '9 mins'),
+(198, 224, '', '', '', '', '', '', '-', '-'),
+(199, 225, 'Sooke', 'V9Z 0L2', 'BC', 'Brantford', 'N3T 6G6', 'ON', '4,125 km', '1 day 17 hours'),
+(200, 226, 'Brantford', 'N3T 5L5', 'ON', 'Brantford', 'N3T 6G6', 'ON', '5.4 km', '10 mins'),
+(201, 227, 'Brantford', 'N3T 5L5', 'ON', 'Greater Sudbury', 'P3E', 'ON', '480 km', '4 hours 42 mins'),
+(202, 228, 'Toronto', 'M5V 1M5', 'ON', 'Toronto', 'M5K 1E6', 'ON', '2.4 km', '11 mins'),
+(203, 229, 'Mississauga', 'L4Y 4G6', 'ON', 'Brampton', 'L6Y 4M3', 'ON', '16.4 km', '18 mins'),
+(204, 230, 'Mississauga', 'L5N 2L3', 'ON', 'Mississauga', 'L4Y 4G6', 'ON', '16.8 km', '20 mins'),
+(205, 231, 'Brantford', 'N3T 5L5', 'ON', 'Brantford', 'N3T 6G6', 'ON', '5.4 km', '10 mins'),
+(206, 232, 'Toronto', 'M5H 2R2', 'ON', 'New Westminster', 'V3M', 'BC', '4,187 km', '1 day 16 hours'),
+(207, 233, 'Mississauga', 'L4Y 4G6', 'ON', 'Toronto', 'M5J 1E6', 'ON', '23.9 km', '24 mins'),
+(208, 234, 'Brantford', 'N3T 5L5', 'ON', 'Brantford', 'N3T 6G6', 'ON', '5.4 km', '10 mins'),
+(209, 235, 'Brantford', 'N3T 5L5', 'ON', 'Brantford', 'N3T 6G6', 'ON', '5.4 km', '10 mins'),
+(210, 236, 'Mississauga', 'L4Y 4G6', 'ON', 'Toronto', 'M5J 1E6', 'ON', '23.9 km', '24 mins'),
+(211, 237, 'Mississauga', 'L4W 2L2', 'ON', 'Toronto', 'M9C 2Z4', 'ON', '10.3 km', '12 mins'),
+(212, 238, 'Mississauga', 'L4W 2L2', 'ON', 'Toronto', 'M9C 2Z4', 'ON', '10.3 km', '12 mins'),
+(213, 239, 'Brampton', '', 'ON', 'Brantford', '', 'ON', '103 km', '1 hour 4 mins'),
+(214, 240, 'Surrey', '', 'BC', 'Calgary', '', 'AB', '945 km', '10 hours 1 min'),
+(215, 241, 'Brantford', 'N3T 5L5', 'ON', 'Brantford', 'N3T 2H5', 'ON', '5.5 km', '9 mins'),
+(216, 242, 'Oakville', 'L6H 7G9', 'ON', 'Toronto', 'M5G 1S4', 'ON', '35.6 km', '39 mins');
 
 -- --------------------------------------------------------
 
@@ -132,7 +159,34 @@ INSERT INTO `driver_trips` (`id`, `uid`, `alfa_code`, `type`, `departure`, `drop
 (212, 43, 'DRufoXeFBk', 1, 'Brantford, ON, Canada', 'Listowel, ON, Canada', '2023-11-08', '05:00:00', 3, 7, 26.50, '', '2023-11-03 13:19:31'),
 (213, 43, 'DRtty46kfS', 1, 'Kitchener, ON, Canada', 'Listowel, ON, Canada', '2023-11-08', '06:00:00', 3, 7, 15.00, '', '2023-11-03 13:20:17'),
 (214, 43, 'DRWRtxh0W9', 1, 'Brantford, ON, Canada', 'Waterloo, ON, Canada', '2023-11-08', '05:00:00', 3, 7, 15.00, '', '2023-11-03 13:24:53'),
-(215, 43, 'DRyRRZaeeP', 1, 'Brantford, ON, Canada', 'Tiverton, ON, Canada', '2023-11-08', '05:00:00', 3, 7, 49.00, '', '2023-11-03 13:25:46');
+(215, 43, 'DRyRRZaeeP', 1, 'Brantford, ON, Canada', 'Tiverton, ON, Canada', '2023-11-08', '05:00:00', 3, 7, 49.00, '', '2023-11-03 13:25:46'),
+(216, 39, 'CUYVz8zGT5', 2, '32 Carroll Lane, Brantford, ON, Canada', 'Transit Terminal, Brantford, ON, Canada', '2024-05-17', '12:25:00', 0, 1, 0.00, '', '2024-05-16 22:27:37'),
+(217, 39, 'DRPnCpTdAz', 1, 'High Park, Bloor Street West, Toronto, ON, Canada', 'Transit Terminal, Brantford, ON, Canada', '2024-05-17', '06:00:00', 3, 5, 24.38, '', '2024-05-16 22:41:24'),
+(218, 39, 'CUHF6dE91Z', 2, '32 Carrick Avenue, Hamilton, ON, Canada', 'Brantford, ON, Canada', '2024-05-27', '05:00:00', 0, 3, 0.00, 'we have large luguage', '2024-05-27 20:39:36'),
+(219, 39, 'CUR3PKKR4I', 2, '325 Milner Avenue, Scarborough, ON, Canada', '225 Simcoe Street, Toronto, ON, Canada', '2024-06-14', '12:00:00', 0, 4, 0.00, '', '2024-06-14 02:43:14'),
+(220, 39, 'CUg8NnkKRd', 2, '44 Toronto, King Street West, Toronto, ON, Canada', '32 Carroll Lane, Brantford, ON, Canada', '2024-06-15', '06:00:00', 0, 5, 0.00, 'I have a lugguage', '2024-06-14 13:46:25'),
+(221, 49, 'DR3wklz6XY', 1, '16 Witteveen Drive, Brantford, ON, Canada', '274 Colborne Street, Brantford, ON, Canada', '2024-07-26', '12:00:00', 3, 3, 20.00, '', '2024-07-11 17:21:49'),
+(222, 49, 'DRknVSWuJf', 1, '16 Witteveen Drive, Brantford, ON, Canada', '274 Colborne Street, Brantford, ON, Canada', '2024-07-26', '12:00:00', 3, 3, 20.00, '', '2024-07-11 17:22:03'),
+(223, 50, 'DRPbFUkHxF', 1, '16 Witteveen Drive, Brantford, ON, Canada', '274 Colborne Street, Brantford, ON, Canada', '2024-07-26', '12:00:00', 3, 3, 20.00, '', '2024-07-11 17:22:11'),
+(224, 50, 'CUHF15BJ50', 2, 'dwhqj', 'hjdwnhq', '2024-07-12', '12:00:00', 0, 2, 0.00, '', '2024-07-12 03:56:05'),
+(225, 50, 'DR3UYOF4pl', 1, '16 Witter Place, Sooke, BC, Canada', 'Transit Terminal, Brantford, ON, Canada', '2024-07-12', '12:00:00', 3, 1, 1031.25, '', '2024-07-12 03:57:34'),
+(226, 50, 'DR1Q2lPsHi', 1, '16 Witteveen Drive, Brantford, ON, Canada', 'Transit Terminal, Brantford, ON, Canada', '2024-07-12', '02:00:00', 3, 1, 8.00, '', '2024-07-12 04:00:06'),
+(227, 39, 'DR3Qx4FtOn', 1, '32 Carroll Lane, Brantford, ON, Canada', 'Transit Terminal, Greater Sudbury, ON, Canada', '2024-07-14', '12:00:00', 3, 3, 120.00, '', '2024-07-12 04:00:58'),
+(228, 39, 'CUCU2OTY5E', 2, '44 Toronto, King Street West, Toronto, ON, Canada', '66 Wellington Street West, Toronto, ON, Canada', '2024-07-14', '12:00:00', 0, 1, 0.00, '', '2024-07-12 04:01:46'),
+(229, 40, 'DR4rsTsI9u', 1, '888 Dundas Street East, Mississauga, ON, Canada', '7700 Hurontario Street, Brampton, ON, Canada', '2024-07-13', '12:00:00', 3, 3, 4.10, '', '2024-07-12 04:02:40'),
+(230, 40, 'CULN9yZwQ5', 2, '6750 Mississauga Road, Mississauga, ON, Canada', '888 Dundas Street East, Mississauga, ON, Canada', '2024-07-13', '12:00:00', 0, 5, 0.00, '', '2024-07-12 04:03:17'),
+(231, 50, 'DR9F9cQK86', 1, '16 Witteveen Drive, Brantford, ON, Canada', 'Transit Terminal, Brantford, ON, Canada', '2024-07-12', '02:00:00', 3, 1, 8.00, '', '2024-07-12 04:05:53'),
+(232, 41, 'DRaqwPVYQU', 1, '333 Bay Street, Toronto, ON, Canada', '22nd Street, New Westminster, BC, Canada', '2024-07-19', '12:00:00', 3, 3, 1046.75, '', '2024-07-12 04:06:48'),
+(233, 50, 'DRtYt1yX6h', 1, '888 Dundas Street East, Mississauga, ON, Canada', '81 Bay Street, Toronto, ON, Canada', '2024-07-13', '12:00:00', 3, 8, 5.97, '', '2024-07-12 04:15:00'),
+(234, 50, 'DRafnIt8BY', 1, '16 Witteveen Drive, Brantford, ON, Canada', 'Transit Terminal, Brantford, ON, Canada', '2024-07-14', '12:00:00', 3, 2, 8.00, '', '2024-07-12 04:21:43'),
+(235, 50, 'DRX49B5dpg', 1, '16 Witteveen Drive, Brantford, ON, Canada', 'Transit Terminal, Brantford, ON, Canada', '2024-07-13', '12:00:00', 1, 4, 10.00, '', '2024-07-12 04:24:47'),
+(236, 40, 'DRi6woCjdt', 1, '888 Dundas Street East, Mississauga, ON, Canada', '81 Bay Street, Toronto, ON, Canada', '2024-07-13', '12:00:00', 3, 8, 5.97, '', '2024-07-12 04:27:09'),
+(237, 40, 'DRnySX1SfN', 1, '5444 Dixie Road, Mississauga, ON, Canada', '666 Burnhamthorpe Road, Etobicoke, ON, Canada', '2024-07-13', '12:00:00', 3, 4, 8.00, '', '2024-07-12 04:27:57'),
+(238, 40, 'DR45eZu2RD', 1, '5444 Dixie Road, Mississauga, ON, Canada', '666 Burnhamthorpe Road, Etobicoke, ON, Canada', '2024-07-13', '12:00:00', 3, 4, 8.00, '', '2024-07-12 04:31:44'),
+(239, 51, 'DRTnxiZsKX', 1, 'Brampton, ON, Canada', 'Brantford, ON, Canada', '2024-07-13', '12:00:00', 3, 4, 25.75, '', '2024-07-12 13:34:47'),
+(240, 51, 'DRJoPlk1AK', 1, 'Surrey, BC, Canada', 'Calgary, AB, Canada', '2024-07-14', '12:00:00', 3, 3, 236.25, '', '2024-07-12 13:35:56'),
+(241, 51, 'DR8PpcQJDD', 1, '16 Witteveen Drive, Brantford, ON, Canada', '274 Colborne Street, Brantford, ON, Canada', '2024-07-13', '12:00:00', 3, 3, 8.00, 'latest ride', '2024-07-12 13:36:52'),
+(242, 54, 'CULvZbOEGs', 2, '5 Drive-In, Ninth Line, Oakville, ON, Canada', '225 Simcoe Street, Toronto, ON, Canada', '2024-08-03', '12:00:00', 0, 3, 0.00, '', '2024-08-02 13:33:07');
 
 -- --------------------------------------------------------
 
@@ -142,11 +196,16 @@ INSERT INTO `driver_trips` (`id`, `uid`, `alfa_code`, `type`, `departure`, `drop
 
 CREATE TABLE `user_data` (
   `uid` int(11) NOT NULL,
+  `google_id` varchar(50) DEFAULT NULL,
   `type` int(11) NOT NULL COMMENT 'D:1|P:2',
   `name` varchar(25) NOT NULL,
   `email` varchar(30) NOT NULL,
+  `password` text DEFAULT NULL,
   `phone` varchar(12) NOT NULL,
   `email_verify` int(11) NOT NULL DEFAULT 0,
+  `avatar_url` varchar(255) DEFAULT NULL,
+  `reset_token` text DEFAULT NULL,
+  `reset_expires` varchar(50) DEFAULT NULL,
   `time_stamp` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp()
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
@@ -154,17 +213,23 @@ CREATE TABLE `user_data` (
 -- Dumping data for table `user_data`
 --
 
-INSERT INTO `user_data` (`uid`, `type`, `name`, `email`, `phone`, `email_verify`, `time_stamp`) VALUES
-(39, 2, 'Navjot singh', 'ns949405@gmail.com', '5555555555', 1, '2023-10-28 05:52:48'),
-(40, 2, 'Navjot singh', 'web.dev.nav@gmail.com', '6478974258', 1, '2023-10-29 00:19:15'),
-(41, 1, 'Rohit singh', 'urlshotner000@gmail.com', '6476745876', 1, '2023-10-29 00:35:09'),
-(42, 1, 'Devanshu Yadav', 'devanshug18@gmail.com', '5483330337', 0, '2023-10-29 16:53:09'),
-(43, 1, 'Manish Thakurwani', 'mthakurwani@gmail.com', '6477107686', 1, '2023-10-29 17:27:16'),
-(44, 1, 'Kaps', 'kaps.poparide@gmail.com', '2896324230', 1, '2023-10-29 17:31:56'),
-(45, 1, 'Mital', 'mitalpkw@gmail.com', '5196164825', 1, '2023-10-29 18:42:22'),
-(46, 2, 'Abdulmalik Ali Khail', 'abdulmalik885522@gmail.com', '2269343568', 0, '2023-10-30 20:29:14'),
-(47, 2, 'kamel', 'aayatanu20@gmail.com', '9041240383', 1, '2023-10-30 20:32:08'),
-(48, 1, 'Fahad', 'fahad24385@gmail.com', '6475002548', 1, '2023-10-30 22:51:24');
+INSERT INTO `user_data` (`uid`, `google_id`, `type`, `name`, `email`, `password`, `phone`, `email_verify`, `avatar_url`, `reset_token`, `reset_expires`, `time_stamp`) VALUES
+(52, '106787553110631631610', 2, 'Navjot Singh', 'urlshotner000@gmail.com', NULL, '', 1, 'https://lh3.googleusercontent.com/a/ACg8ocLU4hbsD06GvSi05djCHhOCdkbMI37LXeQJ-pMvCP6wT6Xukw=s96-c', '9af044db1553f97f640e870da8faa5ca56ce89157bd14a1510b4c35ba4dda4f964ed45bb40b7077327e8614b2af1cf7d70ac', '2024-08-15 05:58:46', '2024-08-15 08:58:46'),
+(54, '100897174879377600495', 2, 'Navjot singh', 'web.dev.nav@gmail.com', NULL, '', 1, 'https://lh3.googleusercontent.com/a/ACg8ocLx695uALK2Q-qaZ1ynmXFYcj6TBxk3feafy4v-JH1o7AvXqJs=s96-c', NULL, NULL, '2024-07-29 03:24:49'),
+(55, '115000788831718990916', 2, 'Navjot Singh', 'web.navjot@gmail.com', NULL, '', 1, 'https://lh3.googleusercontent.com/a/ACg8ocJrdxh2dD5h9WWW0k3s71CwxAAc4x7RY3-j4KucpjC3Go8D8UM=s96-c', NULL, NULL, '2024-07-29 05:23:49'),
+(56, '105709831055064227488', 2, 'Shivasav Bhasin', 'shivasavbhasin@gmail.com', '$2y$10$O2GB5VETMNfJ4K.y7QWRHO01JewfHJIC4o8HfOQNPzpDW6GhWgWRS', '', 1, 'https://lh3.googleusercontent.com/a/ACg8ocKQrKgfbE-Zw83aa5nYPdYz0wcr7hH1GETnDuC3j11umWkz6mE=s96-c', NULL, NULL, '2024-08-15 16:27:39'),
+(57, '106113870857726670274', 2, 'AMnaaz', 'aayatnaaz01@gmail.com', NULL, '', 1, 'https://lh3.googleusercontent.com/a/ACg8ocLJSsqh3cB8eM_uxRoLtFiwGNIgWsO6uWnOLmLu6ycL_ff43i7f2A=s96-c', NULL, NULL, '2024-08-02 13:28:53'),
+(58, NULL, 1, '', 'ns9496405@gmail.com', NULL, '', 0, NULL, NULL, NULL, '2024-08-15 06:14:26'),
+(59, NULL, 1, '', 'support@codelone.com', NULL, '', 0, NULL, NULL, NULL, '2024-08-15 06:21:26'),
+(60, NULL, 1, '', 'mohitsethi148@gmail.com', NULL, '', 0, NULL, NULL, NULL, '2024-08-15 06:22:39'),
+(61, NULL, 1, '', 'mohitsethi1438@gmail.com', '$2y$10$5TN5ntE9TR0i.HGyza64g.BH.nDL.FlVs/KwUl4Kro9JU3/0q.2mW', '', 0, NULL, NULL, NULL, '2024-08-15 06:25:27'),
+(62, NULL, 1, 'Nav', 'ns949405@gmail.com', '$2y$10$gDgzOt1.kXzthqyTyYkmEeMOpS.q1VFBc85LsQACz.vQAHCu4Sge.', '', 0, NULL, '266e61eb85541335f171fc893d2f497659b1983f0f309c4dbe34539519c6d07ab722f789c56d13afc5a3213850692460c4a0', '2024-08-15 13:35:48', '2024-08-15 16:35:48'),
+(63, NULL, 1, 'Shiv', 'sbhsn2001@gmail.com', '$2y$10$vGi6MKv4eyVGJvPvXkevZ.e//UGUWc295alQ7PYy90mO6TbBDKOG.', '', 0, NULL, '06dabdcf68716d7da083a3106bafac4831532b5d71e138d1df1fcddb3d1160f7e55a57ef4aff9491b7cfa54755f5c7669c34', '2024-08-15 13:25:49', '2024-08-15 16:25:49'),
+(64, NULL, 1, 'Shiv', 'sbhsn2001@gmail.com', '$2y$10$IJ.ZQRAaOg1klmBfIIVAse5WhJ.co/k.tw.yu.4ZfKzdh6dbD.ka.', '', 0, NULL, NULL, NULL, '2024-08-15 16:25:19'),
+(65, NULL, 1, 'Shiv', 'sbhsn2001@gmail.com', '$2y$10$gVDD2zo5cypq6u..wUqFVugEQYdTJb3gQA096OeKUAxvCSCB9SvU6', '', 0, NULL, NULL, NULL, '2024-08-15 16:25:19'),
+(66, NULL, 1, 'Shiv', 'sbhsn2001@gmail.com', '$2y$10$0FGTsNq1ssc0hCO8U2FlduEKBj7DmXMIs1/z8aIWEBMNbPg6lIt66', '', 0, NULL, NULL, NULL, '2024-08-15 16:25:19'),
+(67, NULL, 1, 'Shiv', 'sbhsn2001@gmail.com', '$2y$10$6VYnrNvHwJ.HCkYcgzKWgucWmDSWSUvXMfGtqISA5VWp5KEDhQspO', '', 0, NULL, NULL, NULL, '2024-08-15 16:25:19'),
+(68, NULL, 1, 'Shiv', 'sbhsn2001@gmail.com', '$2y$10$xspX1zAho2GyXSPdfr8KheuhgFttzEGXK/wqSy1ob1W1IClDPvE2O', '', 0, NULL, NULL, NULL, '2024-08-15 16:25:19');
 
 --
 -- Indexes for dumped tables
@@ -196,19 +261,19 @@ ALTER TABLE `user_data`
 -- AUTO_INCREMENT for table `address_maping`
 --
 ALTER TABLE `address_maping`
-  MODIFY `mid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=190;
+  MODIFY `mid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=217;
 
 --
 -- AUTO_INCREMENT for table `driver_trips`
 --
 ALTER TABLE `driver_trips`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=216;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=243;
 
 --
 -- AUTO_INCREMENT for table `user_data`
 --
 ALTER TABLE `user_data`
-  MODIFY `uid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=49;
+  MODIFY `uid` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=69;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

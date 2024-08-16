@@ -50,8 +50,28 @@ $routes->get('detail/(:num)', 'DetailController::index/$1');
 $routes->get('request', 'RequestController::index');
 
 // login-register
-$routes->get('login', 'LoginController::index');
+$routes->get('login', 'LoginController::login');
+$routes->get('auth/google', 'LoginController::google');
+$routes->get('auth/callback', 'LoginController::callback');
+
 $routes->get('signup', 'RegisterController::index');
+$routes->get('forget', 'RegisterController::forget');
+$routes->post('forgot-password', 'RegisterController::forgotPassword');
+
+// Email/password login route
+$routes->post('login/email', 'LoginController::loginWithEmail');
+// Email/password registration route
+$routes->post('signup/email', 'RegisterController::registerWithEmail');
+
+//reset-password
+$routes->get('/reset-password', 'RegisterController::resetPassword');
+$routes->post('/reset-password', 'RegisterController::updatePassword');
+
+
+//user profile
+$routes->get('profile', 'UserController::index');
+$routes->get('/logout', 'UserController::logout');
+
 
 //search form by code
 $routes->get('validatethecode', 'SearchController::validatethecode');

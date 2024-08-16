@@ -26,6 +26,8 @@
    <script src="<?= base_url('public/assets/js/postrip_validator.js');?>"></script>
 <?php endif; ?>
 
+<!-- SweetAlert JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
 
 
 

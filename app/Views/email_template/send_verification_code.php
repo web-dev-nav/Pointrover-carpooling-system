@@ -66,6 +66,9 @@
             <p>
                 <span class="button"><a class="text-white" href="<?= base_url('detail/'.$trip_id); ?>"><?= base_url('detail/'.$trip_id); ?></a></span>
             </p>
+              <p>
+                <span class="button"><a class="text-white" href="<?= base_url('activate'); ?>">Enter Code here</a></span>
+            </p>
 
             <p>Use the above code to activate the posted trip.</p>
             <p>Thank you for choosing Pointrover.com!</p>

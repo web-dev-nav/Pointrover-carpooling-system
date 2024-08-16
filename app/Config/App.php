@@ -7,6 +7,8 @@ use CodeIgniter\Session\Handlers\FileHandler;
 
 class App extends BaseConfig
 {
+   
+  
     /**
      * --------------------------------------------------------------------------
      * Base Site URL
@@ -446,4 +448,9 @@ class App extends BaseConfig
      * @see http://www.w3.org/TR/CSP/
      */
     public bool $CSPEnabled = false;
+
+    // public $sessionDriver = 'CodeIgniter\Session\Handlers\FileHandler'; // or DatabaseHandler
+    // public $sessionSavePath = WRITEPATH . 'session'; // Ensure this path is writable
+    // public $sessionCookieName = 'ci_session';
+
 }
